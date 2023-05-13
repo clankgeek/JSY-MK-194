@@ -1,16 +1,6 @@
 #include <Arduino.h>
 #include <HardwareSerial.h>
 
-/*
-  JSY-MK-194
-
-  Change speed of serial port 
-
-  Connect JSY-MK-194 TX pin to pin 0 (RX) of Arduino Uno
-  Connect JSY-MK-194 TX pin to pin 1 (TX) of Arduino Uno
-*/
-
-
 uint32_t actualSpeed = 4800;
 uint32_t newSpeed = 9600; // you can choose 4800, 9600, 19200 or 38400
 

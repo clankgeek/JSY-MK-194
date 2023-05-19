@@ -3,23 +3,13 @@
 #include <LiquidCrystal_I2C.h>
 #include <Wire.h>
 
-/*
-  JSY-MK-194 with an Arduino UNO
+#define VERSION "1.0"
 
-  Display power of 2 sensors in watt to a 2x16 Segments LCD I2C display
-
-  Connect JSY-MK-194 TX pin to pin 0 (RX) of Arduino Uno
-  Connect JSY-MK-194 TX pin to pin 1 (TX) of Arduino Uno
-  Connect LCD I2C SDA to pin A4 (SDA) of Arduino Uno
-  Connect LCD I2C SCL to pin A5 (SCL) of Arduino Uno
-*/
-
-#define SERIAL_BITRATE 9600
+#define SERIAL_BITRATE 4800
 #define LCD_ADDRESS 0x3F // some display use 0x27 address
 
 LiquidCrystal_I2C lcd(LCD_ADDRESS, 16, 2);
 int Watt1, Watt2 = 0;
-String Version = "1.0";
 
 void lcdStrings(String, String);
 void lcdInfo();
@@ -30,7 +20,7 @@ void setup() {
   Serial.begin(SERIAL_BITRATE, SERIAL_8N1);
   lcd.init();
   lcd.backlight();
-  lcdStrings("WattMeter", "Version " + Version);
+  lcdStrings("WattMeter", "Version " + VERSION);
   delay(5000);
 }
 

@@ -3,10 +3,10 @@
 #include <LiquidCrystal_I2C.h>
 #include <Wire.h>
 
-#define VERSION "1.0"
-
 #define SERIAL_BITRATE 4800
 #define LCD_ADDRESS 0x3F // some display use 0x27 address
+
+const String Version = "1.0";
 
 LiquidCrystal_I2C lcd(LCD_ADDRESS, 16, 2);
 int Watt1, Watt2 = 0;
@@ -20,7 +20,7 @@ void setup() {
   Serial.begin(SERIAL_BITRATE, SERIAL_8N1);
   lcd.init();
   lcd.backlight();
-  lcdStrings("WattMeter", "Version " + VERSION);
+  lcdStrings("WattMeter", "Version " + Version);
   delay(5000);
 }
 

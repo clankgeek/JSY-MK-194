@@ -11,3 +11,4 @@
   - Connect LCD I2C SDA to pin A4 (SDA) of Arduino Uno
   - Connect LCD I2C SCL to pin A5 (SCL) of Arduino Uno
 
+![power](power.jpg)

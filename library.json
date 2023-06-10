@@ -1,0 +1,23 @@
+{
+    "name": "JSY-MK-194",
+    "version": "1.0.0",
+    "description": "object to use module jsy-mk-194 with an arduino",
+    "keywords": "jsy-mk-194, module",
+    "repository":
+    {
+      "type": "git",
+      "url": "https://github.com/clankgeek/JSY-MK-194.git"
+    },
+    "authors":
+    [
+      {
+        "name": "Cédric Champ",
+        "email": "clank@ik.me",
+        "url": "https://github.com/clankgeek"
+      }
+    ],
+    "license": "MIT",
+    "homepage": "https://github.com/clankgeek/JSY-MK-194/",
+    "frameworks": "arduino",
+    "platforms": "*"
+  }

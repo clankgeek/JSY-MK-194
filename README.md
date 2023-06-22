@@ -5,7 +5,7 @@ A simple library to use module JSY-MK-194 with Arduino.
 Note : Due to limitation of Uno/Nano at only once serial port, before upload firmware on Uno, you must unplug the serial port of JSY-MK-194.
 
 - Connect JSY-MK-194 TX pin to pin RX of Arduino
-- Connect JSY-MK-194 TX pin to pin TX of Arduino
+- Connect JSY-MK-194 RX pin to pin TX of Arduino
 - Connect JSY-MK-194 GND pin to pin GND of Arduino
 - Connect JSY-MK-194 VCC pin to pin 3.3v of Arduino
 - Connect JSY-MK-194 N pin to 250v neutral
